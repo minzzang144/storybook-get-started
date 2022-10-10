@@ -1,6 +1,6 @@
 // Button.stories.ts|tsx
 
-import React from "react";
+import React, { useState } from "react";
 
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
@@ -18,3 +18,20 @@ export default {
 export const Primary: ComponentStory<typeof Button> = () => (
     <Button primary label="Button"></Button>
 );
+
+export const Secondary = () => {
+    // Sets the hooks for both the label and primary props
+    const [value, setValue] = useState("Secondary");
+    const [isPrimary, setIsPrimary] = useState(false);
+
+    // Sets a click handler to change the label's value
+    const handleOnChange = () => {
+        if (!isPrimary) {
+            setIsPrimary(true);
+            setValue("Primary");
+        }
+    };
+    return (
+        <Button primary={isPrimary} onClick={handleOnChange} label={value} />
+    );
+};
