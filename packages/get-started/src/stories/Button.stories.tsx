@@ -35,3 +35,6 @@ export const Secondary = () => {
         <Button primary={isPrimary} onClick={handleOnChange} label={value} />
     );
 };
+
+export const Tertiary = () => <Button primary label="Button" />;
+Tertiary.storyName = "I am the tertiary";
