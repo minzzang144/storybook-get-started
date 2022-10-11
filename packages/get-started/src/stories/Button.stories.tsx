@@ -38,3 +38,16 @@ export const Secondary = () => {
 
 export const Tertiary = () => <Button primary label="Button" />;
 Tertiary.storyName = "I am the tertiary";
+
+//👇 We create a “template” of how args map to rendering
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+
+// 👇 Each story then reuses that template
+export const One = Template.bind({});
+One.args = { backgroundColor: "#ff0", label: "Button" };
+
+export const Two = Template.bind({});
+Two.args = { ...One.args, label: "😄👍😍💯" };
+
+export const Three = Template.bind({});
+Three.args = { ...One.args, label: "📚📕📈🤓" };
