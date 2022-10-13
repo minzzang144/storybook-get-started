@@ -13,11 +13,30 @@ export default {
      */
     title: "Button",
     component: Button,
+    //👇 Creates specific parameters for the story
+    parameters: {
+        backgrounds: {
+            values: [
+                { name: "red", value: "#f00" },
+                { name: "green", value: "#0f0" },
+                { name: "blue", value: "#00f" },
+            ],
+        },
+    },
 } as ComponentMeta<typeof Button>;
 
 export const Primary: ComponentStory<typeof Button> = () => (
     <Button primary label="Button"></Button>
 );
+
+Primary.parameters = {
+    backgrounds: {
+        values: [
+            { name: "red", value: "#f00" },
+            { name: "green", value: "#0f0" },
+        ],
+    },
+};
 
 export const Secondary = () => {
     // Sets the hooks for both the label and primary props
