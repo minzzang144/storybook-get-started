@@ -23,6 +23,13 @@ export default {
             ],
         },
     },
+    decorators: [
+        (Story) => (
+            <div style={{ margin: "1rem" }}>
+                <Story />
+            </div>
+        ),
+    ],
 } as ComponentMeta<typeof Button>;
 
 export const Primary: ComponentStory<typeof Button> = () => (
@@ -37,6 +44,19 @@ Primary.parameters = {
         ],
     },
 };
+
+Primary.decorators = [
+    (Story) => (
+        <div style={{ margin: "0" }}>
+            <Story />
+        </div>
+    ),
+    (Story) => (
+        <div style={{ backgroundColor: "lightgray" }}>
+            <Story />
+        </div>
+    ),
+];
 
 export const Secondary = () => {
     // Sets the hooks for both the label and primary props
