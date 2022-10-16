@@ -1,41 +1,92 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+// Button.stories.ts|tsx
 
-import { Button } from './Button';
+import React, { useState } from "react";
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+
+import { Button } from "./Button";
+
 export default {
-  title: 'Example/Button',
-  component: Button,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+    /* 👇 The title prop is optional.
+     * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+     * to learn how to generate automatic titles
+     */
+    title: "Button",
+    component: Button,
+    //👇 Creates specific parameters for the story
+    parameters: {
+        backgrounds: {
+            values: [
+                { name: "red", value: "#f00" },
+                { name: "green", value: "#0f0" },
+                { name: "blue", value: "#00f" },
+            ],
+        },
+    },
+    decorators: [
+        (Story) => (
+            <div style={{ margin: "1rem" }}>
+                <Story />
+            </div>
+        ),
+    ],
 } as ComponentMeta<typeof Button>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+export const Primary: ComponentStory<typeof Button> = () => (
+    <Button primary label="Button"></Button>
+);
+
+Primary.parameters = {
+    backgrounds: {
+        values: [
+            { name: "red", value: "#f00" },
+            { name: "green", value: "#0f0" },
+        ],
+    },
+};
+
+Primary.decorators = [
+    (Story) => (
+        <div style={{ margin: "0" }}>
+            <Story />
+        </div>
+    ),
+    (Story) => (
+        <div style={{ backgroundColor: "lightgray" }}>
+            <Story />
+        </div>
+    ),
+];
+
+export const Secondary = () => {
+    // Sets the hooks for both the label and primary props
+    const [value, setValue] = useState("Secondary");
+    const [isPrimary, setIsPrimary] = useState(false);
+
+    // Sets a click handler to change the label's value
+    const handleOnChange = () => {
+        if (!isPrimary) {
+            setIsPrimary(true);
+            setValue("Primary");
+        }
+    };
+    return (
+        <Button primary={isPrimary} onClick={handleOnChange} label={value} />
+    );
+};
+
+export const Tertiary = () => <Button primary label="Button" />;
+Tertiary.storyName = "I am the tertiary";
+
+//👇 We create a “template” of how args map to rendering
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: 'Button',
-};
+// 👇 Each story then reuses that template
+export const One = Template.bind({});
+One.args = { backgroundColor: "#ff0", label: "Button" };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
+export const Two = Template.bind({});
+Two.args = { ...One.args, label: "😄👍😍💯" };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
-};
+export const Three = Template.bind({});
+Three.args = { ...One.args, label: "📚📕📈🤓" };
