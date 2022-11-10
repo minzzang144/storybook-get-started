@@ -22,4 +22,4 @@ jobs:
                   projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
                   workingDir: packages/design-systems-for-developers
             - run: yarn test
-              workingDir: packages/design-systems-for-developers
+              working-directory: packages/design-systems-for-developers
