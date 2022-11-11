@@ -1,4 +1,4 @@
-import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
 
 import { Avatar } from "./Avatar";
 
@@ -54,16 +54,24 @@ Avatar를 사용할 때는 사용자 이름이 _항상_ Avatar의 옆이나 툴�
 
 export const Template = (args) => <Avatar {...args} />;
 
-<Story
-    name="standard"
-    args={{
-        size: "large",
-        username: "Tom Coleman",
-        src: "https://avatars2.githubusercontent.com/u/132554",
-    }}
->
-    {Template.bind({})}
-</Story>
+<Canvas>
+    <Story
+        name="standard"
+        args={{
+            size: "large",
+            username: "Tom Coleman",
+            src: "https://avatars2.githubusercontent.com/u/132554",
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+<ArgsTable story="standard" />
+
+## Usage
+
+Avatar는 사람이나 조직을 나타내는 데 사용됩니다. Avatar는 기본적으로 이미지를 보여주고, 이미지가 없는 경우에는 사용자 이름의 첫 번째 이니셜이 들어갑니다. 컴포넌트를 하이드레이팅(hydrating) 하는 동안 Avatar가 데이터를 기다리고 있음을 나타내는 스켈레톤 템플릿을 렌더링하는 것이 유용할 수 있습니다. Avatar들을 AvatarList 컴포넌트로 그룹화할 수 있습니다.
 
 ### Sizes
 
