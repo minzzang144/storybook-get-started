@@ -34,8 +34,7 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   #👇 npm token, see https://storybook.js.org/tutorials/design-systems-for-developers/react/ko/distribute/ to obtain it
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-              with:
-                  workingDir: packages/design-systems-for-developers
+              working-directory: packages/design-systems-for-developers
               run: |
                   yarn install --frozen-lockfile
                   yarn build
