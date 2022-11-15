@@ -1,0 +1,25 @@
+# Name of our action
+name: "Chromatic"
+# The event that will trigger the action
+on: push
+
+# What the action will do
+jobs:
+    chromatic-deployment:
+        # Operating System
+        runs-on: ubuntu-latest
+        # Job steps
+        steps:
+            - uses: actions/checkout@v1
+            - name: Install dependencies
+              run: yarn
+              # 👇 Adds Chromatic as a step in the workflow
+            - name: Publish Project 1 to Chromatic
+              uses: chromaui/action@v1
+              # Chromatic GitHub Action options
+              with:
+                  # 👇 Chromatic projectToken, refer to the manage page to obtain it.
+                  projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+                  workingDir: packages/design-systems-for-developers
+            - run: yarn test
+              working-directory: packages/design-systems-for-developers
