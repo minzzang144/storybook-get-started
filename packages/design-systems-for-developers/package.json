@@ -66,9 +66,6 @@
             "last 1 safari version"
         ]
     },
-    "resolutions": {
-        "babel-loader": "8.1.0"
-    },
     "devDependencies": {
         "@babel/cli": "^7.19.3",
         "@babel/preset-typescript": "^7.18.6",
