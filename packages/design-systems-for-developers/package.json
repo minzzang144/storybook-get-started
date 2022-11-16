@@ -14,7 +14,7 @@
         "polished": "^4.1.1",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
-        "react-scripts": "^5.0.1",
+        "react-scripts": "4.0.3",
         "styled-components": "^5.2.1",
         "web-vitals": "^1.0.1"
     },
@@ -81,6 +81,7 @@
         "@storybook/react": "^6.5.13",
         "@storybook/testing-library": "^0.0.13",
         "auto": "^10.37.6",
+        "babel-loader": "8.0.3",
         "chromatic": "^6.11.4",
         "cross-env": "^7.0.3",
         "cross-var": "^1.1.0",
