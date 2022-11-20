@@ -88,5 +88,9 @@
         "dotenv": "^16.0.3",
         "dotenv-cli": "^6.0.0",
         "prettier": "^2.7.1"
+    },
+    "resolutions": {
+        "babel-loader": "8.1.0",
+        "webpack": "4.44.2"
     }
 }
