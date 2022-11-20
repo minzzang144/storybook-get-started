@@ -89,7 +89,7 @@
         "dotenv-cli": "^6.0.0",
         "prettier": "^2.7.1"
     },
-    "overrides": {
+    "peerDependencies": {
         "babel-loader": "8.1.0",
         "webpack": "4.44.2"
     }
