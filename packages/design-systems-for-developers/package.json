@@ -81,7 +81,7 @@
         "@storybook/react": "^6.5.13",
         "@storybook/testing-library": "^0.0.13",
         "auto": "^10.37.6",
-        "babel-loader": "8.0.3",
+        "babel-loader": "8.3.0",
         "chromatic": "^6.11.4",
         "cross-env": "^7.0.3",
         "cross-var": "^1.1.0",
@@ -90,6 +90,6 @@
         "prettier": "^2.7.1"
     },
     "resolutions": {
-        "babel-loader": "8.0.3"
+        "babel-loader": "8.3.0"
     }
 }
