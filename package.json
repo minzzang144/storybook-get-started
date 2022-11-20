@@ -4,6 +4,9 @@
     "workspaces": [
         "packages/*"
     ],
+    "nohoist": [
+        "design-systems-for-developers/react-scripts/**/**"
+    ],
     "devDependencies": {
         "lerna": "^5.5.4"
     },
