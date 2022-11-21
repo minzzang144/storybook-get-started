@@ -4,9 +4,9 @@
     "workspaces": [
         "packages/*"
     ],
-    "nohoist": [
-        "design-systems-for-developers/react-scripts/**/**"
-    ],
+    "resolutions": {
+        "design-systems-for-developers/react-scripts/babel-loader": "8.1.0"
+    },
     "devDependencies": {
         "lerna": "^5.5.4"
     },
