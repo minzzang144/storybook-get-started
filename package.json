@@ -8,7 +8,7 @@
         "clean": "rm -rf node_modules && rm -f yarn.lock && lerna clean -y && yarn cache clean"
     },
     "resolutions": {
-        "react-scripts/babel-loader": "8.1.0"
+        "**/babel-loader": "8.1.0"
     },
     "devDependencies": {
         "lerna": "^5.5.4"
