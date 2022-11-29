@@ -2,7 +2,7 @@
     "name": "root",
     "private": true,
     "workspaces": [
-        "packages/*"
+        "packages/!(ui-testing-handbook)/**"
     ],
     "scripts": {
         "clean": "rm -rf node_modules && rm -f yarn.lock && lerna clean -y && yarn cache clean"
