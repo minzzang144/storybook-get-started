@@ -21,3 +21,21 @@ Default.args = {
         state: "TASK_INBOX",
     },
 };
+
+export const Pinned = Template.bind({});
+Pinned.args = {
+    task: {
+        id: "2",
+        title: "QA dropdown",
+        state: "TASK_PINNED",
+    },
+};
+
+export const Archived = Template.bind({});
+Archived.args = {
+    task: {
+        id: "3",
+        title: "Write schema for account menu",
+        state: "TASK_ARCHIVED",
+    },
+};
