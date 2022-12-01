@@ -7,7 +7,7 @@ on:
 
 defaults:
   run:
-    working-directory: ../packages/ui-testing-handbook
+    working-directory: packages/ui-testing-handbook
 
 jobs:
   # Run interaction and accessibility tests

@@ -3072,17 +3072,17 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@nrwl/cli@15.2.1":
-  version "15.2.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.2.1.tgz#9de75e20429315bf42516504601a785141fa6e8d"
-  integrity sha512-ufBJ5o3WCixdp6/TPkpn4rH3QBFJcqCMG1d14A/SvAkEnXu3vWlj3E+4GXf3CK+sGNjjf3ZGoNm7OFV+/Ml4GA==
+"@nrwl/cli@15.2.4":
+  version "15.2.4"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.2.4.tgz#7cf18d474c428d6b4aaf7b511c298369c47de39a"
+  integrity sha512-Urhkzj/hzhTlJqOHFZyibYGjvzHvSQhkjN3keHiYCNEOaAGp9DPF+oC5cYrPcqWbu3ZkldDWTk7aVBbeqwDWZQ==
   dependencies:
-    nx "15.2.1"
+    nx "15.2.4"
 
 "@nrwl/devkit@>=14.8.1 < 16":
-  version "15.2.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.2.1.tgz#3907ee18d4bcb9ab36fc950c48c9cb0466ff8ab8"
-  integrity sha512-si6DK0sjtr6Ln+7hh9QD50KqxnOxuP20xJ0fxMVafT/Lz/qtxuCPw9lwJWVagMHWw3pQAtN6lbkWiLOwj8+YPA==
+  version "15.2.4"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.2.4.tgz#ffcb69f462df19d3d282cf25bf346926ee23f141"
+  integrity sha512-5JZWB4ydnu+NKNIfj958nML8AWwhareQ+Q1hLXoOIS/7brqfALNP3y/Ef1ljrLIo1f3xc484TPclqwSH7aRdvQ==
   dependencies:
     "@phenomnomnominal/tsquery" "4.1.1"
     ejs "^3.1.7"
@@ -3090,12 +3090,12 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/tao@15.2.1":
-  version "15.2.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.2.1.tgz#da6a6813eaedcb907b3917d06e4d5bbc4501dbaf"
-  integrity sha512-6ApglWKORasLhtjlJmqo2co/UexSSiD7mWVxT2886oKG2Y/T/5RnPFNhJgGnKJIURCNMxiSKhq7GAA+CE9zRZg==
+"@nrwl/tao@15.2.4":
+  version "15.2.4"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.2.4.tgz#c335e0774e5b7ee26bb3b257a436fe154693d619"
+  integrity sha512-ebGJCkg84yfptuNhGMnIrgHvnknJkeyxWLqRQ7AlMXTzxXOfMS+whjVImM9XjfVYVpBVFWc5QBU5gaKQtzLHmA==
   dependencies:
-    nx "15.2.1"
+    nx "15.2.4"
 
 "@octokit/auth-token@^2.4.4":
   version "2.5.0"
@@ -4906,9 +4906,9 @@
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
 "@types/lodash@^4.14.167":
-  version "4.14.190"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.190.tgz#d8e99647af141c63902d0ca53cf2b34d2df33545"
-  integrity sha512-5iJ3FBJBvQHQ8sFhEhJfjUP+G+LalhavTkYyrAYqz5MEJG+erSv0k9KJLb6q7++17Lafk1scaTIFXcMJlwK8Mw==
+  version "4.14.191"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.191.tgz#09511e7f7cba275acd8b419ddac8da9a6a79e2fa"
+  integrity sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==
 
 "@types/mdast@^3.0.0":
   version "3.0.10"
@@ -4946,14 +4946,14 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "18.11.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.9.tgz#02d013de7058cea16d36168ef2fc653464cfbad4"
-  integrity sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==
+  version "18.11.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.10.tgz#4c64759f3c2343b7e6c4b9caf761c7a3a05cee34"
+  integrity sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==
 
 "@types/node@^14.0.10 || ^16.0.0", "@types/node@^14.14.20 || ^16.0.0", "@types/node@^16.11.62":
-  version "16.18.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.3.tgz#d7f7ba828ad9e540270f01ce00d391c54e6e0abc"
-  integrity sha512-jh6m0QUhIRcZpNv7Z/rpN+ZWXOicUUQbSoWks7Htkbb9IjFQj4kzcX/xFCkjstCj5flMsN8FiSvt+q+Tcs4Llg==
+  version "16.18.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.4.tgz#712ba61b4caf091fc6490301b1888356638c17bd"
+  integrity sha512-9qGjJ5GyShZjUfx2ArBIGM+xExdfLvvaCyQR0t6yRXKPcWCVYF/WemtX/uIU3r7FYECXRXkIiw2Vnhn6y8d+pw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -5649,9 +5649,9 @@
   integrity sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==
 
 "@yarnpkg/parsers@^3.0.0-rc.18":
-  version "3.0.0-rc.31"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/parsers/-/parsers-3.0.0-rc.31.tgz#fbcce77c3783b2be8a381edf70bea3182e0b8b16"
-  integrity sha512-7M67TPmTM5OmtoypK0KHV3vIY9z0v4qZ6zF7flH8THLgjGuoA7naop8pEfL9x5vCtid1PDC4A4COrcym4WAZpQ==
+  version "3.0.0-rc.32"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/parsers/-/parsers-3.0.0-rc.32.tgz#0aef0bd1b9e9954173c01a7cbd35f98765e39e7d"
+  integrity sha512-Sz2g88b3iAu2jpMnhtps2bRX2GAAOvanOxGcVi+o7ybGjLetxK23o2cHskXKypvXxtZTsJegel5pUWSPpYphww==
   dependencies:
     js-yaml "^3.10.0"
     tslib "^2.4.0"
@@ -7886,9 +7886,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001426:
-  version "1.0.30001434"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001434.tgz#ec1ec1cfb0a93a34a0600d37903853030520a4e5"
-  integrity sha512-aOBHrLmTQw//WFa2rcF1If9fa3ypkC1wzqqiKHgfdrXTWcU8C4gKVZT77eQAPWN1APys3+uQ0Df07rKauXGEYA==
+  version "1.0.30001435"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001435.tgz#502c93dbd2f493bee73a408fe98e98fb1dad10b2"
+  integrity sha512-kdCkUTjR+v4YAJelyiDTqiu82BDr4W4CP5sgTA0ZBmqn30XfS2ZghPLMowik9TPhS+psWJiUNxsqLyurDbmutA==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -9070,9 +9070,9 @@ cssdb@^4.4.0:
   integrity sha512-LsTAR1JPEM9TpGhl/0p3nQecC2LJ0kD8X5YARu1hk/9I1gril5vDtMZyNxcEpxxDj34YNck/ucjuoUd66K03oQ==
 
 cssdb@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/cssdb/-/cssdb-7.1.0.tgz#574f97235a83eb753a29f0b1f2cbacac0d628bb8"
-  integrity sha512-Sd99PrFgx28ez4GHu8yoQIufc/70h9oYowDf4EjeIKi8mac9whxRjhM3IaMr6EllP6KKKWtJrMfN6C7T9tIWvQ==
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/cssdb/-/cssdb-7.2.0.tgz#f44bd4abc430f0ff7f4c64b8a1fb857a753f77a8"
+  integrity sha512-JYlIsE7eKHSi0UNuCyo96YuIDFqvhGgHw4Ck6lsN+DP0Tp8M64UTDT2trGbkMDqnCoEjks7CkS0XcjU0rkvBdg==
 
 cssesc@^2.0.0:
   version "2.0.0"
@@ -15002,9 +15002,9 @@ mini-css-extract-plugin@0.11.3:
     webpack-sources "^1.1.0"
 
 mini-css-extract-plugin@^2.4.5:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.7.0.tgz#d7d9ba0c5b596d155e36e2b174082fc7f010dd64"
-  integrity sha512-auqtVo8KhTScMsba7MbijqZTfibbXiBNlPAQbsVt7enQfcDYLdgG57eGxMqwVU3mfeWANY4F1wUg+rMF+ycZgw==
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.7.1.tgz#ec924df783cff32ce6183fceb653028f70128643"
+  integrity sha512-viOoaUFy+Z2w43VsGPbtfwFrr0tKwDctK9dUofG5MBViYhD1noGFUzzDIVw0KPwCGUP+c7zqLxm+acuQs7zLzw==
   dependencies:
     schema-utils "^4.0.0"
 
@@ -15040,9 +15040,9 @@ minimatch@^3.0.2, minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatc
     brace-expansion "^1.1.7"
 
 minimatch@^5.0.1:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-5.1.0.tgz#1717b464f4971b144f6aabe8f2d0b8e4511e09c7"
-  integrity sha512-9TPBGGak4nHfGZsPBohm9AWg6NoT7QTCehS3BIJABslyZbzxfV78QM2Y6+i741OPZIafFAaiiEMh5OyIrJPgtg==
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-5.1.1.tgz#6c9dffcf9927ff2a31e74b5af11adf8b9604b022"
+  integrity sha512-362NP+zlprccbEt/SkxKfRMHnNY85V74mVnpUpNyr3F35covl09Kec7/sEFLt3RA4oXmewtoaanoIf67SE5Y5g==
   dependencies:
     brace-expansion "^2.0.1"
 
@@ -15656,13 +15656,13 @@ nwsapi@^2.2.0:
   resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.2.2.tgz#e5418863e7905df67d51ec95938d67bf801f0bb0"
   integrity sha512-90yv+6538zuvUMnN+zCr8LuV6bPFdq50304114vJYJ8RDyK8D5O9Phpbd6SZWgI7PwzmmfN1upeOJlvybDSgCw==
 
-nx@15.2.1, "nx@>=14.8.1 < 16":
-  version "15.2.1"
-  resolved "https://registry.yarnpkg.com/nx/-/nx-15.2.1.tgz#d51962c24180383d9af1880f57f29312c8311da7"
-  integrity sha512-vVeT5D02cDDiSmS3P2Bos/waYQa3m0yl/rouzsKpusVSmzAQGQbKXhxPb4WnNIj8Iz/8KjFeBM/RZO021BtGNg==
+nx@15.2.4, "nx@>=14.8.1 < 16":
+  version "15.2.4"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-15.2.4.tgz#de55a1342deb3ff2f7b123fe2bbef46c8495f792"
+  integrity sha512-8rTLo5WGmM6hEo5R/u03Jllkyj4vIUbBk2MRAppCvVRXWLS4xJUEOityXJ5BAvaKoLYm6sWUP1gqU7xlldnT5A==
   dependencies:
-    "@nrwl/cli" "15.2.1"
-    "@nrwl/tao" "15.2.1"
+    "@nrwl/cli" "15.2.4"
+    "@nrwl/tao" "15.2.4"
     "@parcel/watcher" "2.0.4"
     "@yarnpkg/lockfile" "^1.1.0"
     "@yarnpkg/parsers" "^3.0.0-rc.18"
