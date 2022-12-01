@@ -42,6 +42,8 @@ jobs:
         uses: chromaui/action@v1
         with:
           # Grab this from the Chromatic manage page
+          # https://stackoverflow.com/questions/67237408/chromatic-deployment-error-when-using-github-actions
+          workingDir: packages/ui-testing-handbook
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
   # Run user flow tests with Cypress
   user-flow:
@@ -53,4 +55,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
+          workingDir: packages/ui-testing-handbook
           start: npm start
