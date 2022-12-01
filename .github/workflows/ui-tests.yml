@@ -55,5 +55,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          workingDir: packages/ui-testing-handbook
+          working-directory: packages/ui-testing-handbook
           start: npm start
