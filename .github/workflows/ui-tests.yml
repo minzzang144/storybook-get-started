@@ -55,5 +55,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
+          # https://github.com/cypress-io/github-action#split-install-and-tests
           working-directory: packages/ui-testing-handbook
           start: npm start
