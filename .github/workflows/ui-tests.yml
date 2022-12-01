@@ -1,15 +1,17 @@
 name: 'UI Tests'
 
-on: push
-
-defaults:
-  run:
-    working-directory: packages/ui-testing-handbook
+on:
+  push:
+      branches:
+        - feature/ui-testing-handbook
 
 jobs:
   # Run interaction and accessibility tests
   interaction-and-accessibility:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/ui-testing-handbook
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -29,6 +31,9 @@ jobs:
   # Run visual and composition tests with Chromatic
   visual-and-composition:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/ui-testing-handbook
     steps:
       - uses: actions/checkout@v2
         with:
@@ -43,6 +48,9 @@ jobs:
   # Run user flow tests with Cypress
   user-flow:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/ui-testing-handbook
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
