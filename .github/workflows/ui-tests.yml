@@ -42,7 +42,6 @@ jobs:
         uses: actions/cache@v2
         id: yarn-cache
         with:
-          working-directory: packages/ui-testing-handbook
           path: |
             ~/.cache/Cypress
             node_modules
@@ -70,7 +69,6 @@ jobs:
         uses: actions/cache@v2
         id: yarn-cache
         with:
-          working-directory: packages/ui-testing-handbook
           path: |
             ~/.cache/Cypress
             node_modules
