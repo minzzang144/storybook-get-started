@@ -56,5 +56,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           # https://github.com/cypress-io/github-action#split-install-and-tests
+          # with는 defaults.run.working-directoory가 적용되지 않는 듯함
           working-directory: packages/ui-testing-handbook
+          config-file: cypress.config.js
           start: npm start
