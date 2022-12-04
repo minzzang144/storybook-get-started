@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: '16'
           cache: 'yarn'
+          cache-dependency-path: './packages/ui-testing-handbook/yarn.lock'
       - name: Install project dependencies
         run: yarn --prefer-offline
   # Run interaction and accessibility tests
