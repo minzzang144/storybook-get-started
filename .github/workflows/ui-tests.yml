@@ -14,21 +14,13 @@ jobs:
   install-cache:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Commit
-        uses: actions/checkout@v2
-      - name: Cache yarn dependencies and cypress
-        uses: actions/cache@v2
-        id: yarn-cache
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          path: |
-            ~/.cache/Cypress
-            ~/packages/ui-testing-handbook/node_modules
-          key: ${{ runner.os }}-yarn-v1-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-v1
-      - name: Install dependencies if cache invalid
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn
+          node-version: '16'
+          cache: 'yarn'
+      - name: Install project dependencies
+        run: yarn --prefer-offline
   # Run interaction and accessibility tests
   interaction-and-accessibility:
     runs-on: ubuntu-latest
@@ -38,16 +30,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14.x'
-      - name: Restore yarn dependencies
-        uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: |
-            ~/.cache/Cypress
-            ~/packages/ui-testing-handbook/node_modules
-          key: ${{ runner.os }}-yarn-v1-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-v1
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Build Storybook
@@ -65,16 +47,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 # Required to retrieve git history
-      - name: Restore yarn dependencies
-        uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: |
-            ~/.cache/Cypress
-            ~/packages/ui-testing-handbook/node_modules
-          key: ${{ runner.os }}-yarn-v1-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-v1
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         with:
@@ -88,16 +60,6 @@ jobs:
     needs: install-cache
     steps:
       - uses: actions/checkout@v2
-      - name: Restore yarn dependencies
-        uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: |
-            ~/.cache/Cypress
-            ~/packages/ui-testing-handbook/node_modules
-          key: ${{ runner.os }}-yarn-v1-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-v1
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
